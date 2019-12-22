@@ -68,6 +68,22 @@ async def toni(ctx):
     except:
         pass
 
+@bot.command(name = "search")
+async def search(ctx,*,arg):
+    link = f'https://pixabay.com/images/search/{arg}/'
+    await ctx.send(link.replace(" ",""))
+
+@bot.command(name = "fsearch")
+async def fsearch(ctx,*,arg):
+    link = f'https://www.foodiesfeed.com/?s={arg}'
+    await ctx.send(link.replace(" ","+"))
+    
+@bot.command(name = "recipe")
+async def recipe(ctx,*,arg):
+    link = f'https://www.allrecipes.com/search/results/?wt={arg}&sort=re'
+    #print(link)
+    await ctx.send(link.replace(" ",""))
+
 #client.run(TOKEN)
 bot.run(TOKEN)
 
