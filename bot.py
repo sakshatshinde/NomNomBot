@@ -84,6 +84,11 @@ async def recipe(ctx,*,arg):
     #print(link)
     await ctx.send(link.replace(" ",""))
 
+@bot.command(name = "ytrecipe")
+async def ytrecipe(ctx, * , arg):
+    link = f'https://www.youtube.com/results?search_query={arg}+recipe'
+    await ctx.send(link.replace(" ","+"))
+    
 #client.run(TOKEN)
 bot.run(TOKEN)
 
