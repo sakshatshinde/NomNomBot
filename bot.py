@@ -1,14 +1,15 @@
 import os, discord, random
 from dotenv import load_dotenv
-from content.quotes import *
+from content.quotes import nom_nom_quotes
 from discord.ext import commands
+
 
 #Storing API keys safely.
 load_dotenv()
 TOKEN = os.getenv('DISCORD_TOKEN')
 
 client = discord.Client()
-bot = commands.Bot(command_prefix=">")
+#######bot = commands.Bot(command_prefix=">")
 #on_ready() event handler, which handles the event when the Client has established a connection to Discord
 @client.event
 async def on_ready():
