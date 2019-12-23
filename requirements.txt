@@ -1,0 +1,10 @@
+discord.py==1.2.5
+future==0.18.2
+python-dotenv==0.10.3
+
+
+
+
+
+
+
