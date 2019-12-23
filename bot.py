@@ -59,6 +59,7 @@ async def info(ctx):
     embed.add_field(name="Invite", value="[Invite link](https://discordapp.com/api/oauth2/authorize?client_id=289205523390267402&permissions=8&scope=bot)")
     await ctx.send(embed = embed)
 
+#A meme for my friend
 @bot.command(name = "toni")
 async def toni(ctx):
     #embed = discord.Embed()
@@ -68,27 +69,37 @@ async def toni(ctx):
     except:
         pass
 
+#Picture search
 @bot.command(name = "search")
 async def search(ctx,*,arg):
     link = f'https://pixabay.com/images/search/{arg}/'
     await ctx.send(link.replace(" ",""))
 
+#Food Search
 @bot.command(name = "fsearch")
 async def fsearch(ctx,*,arg):
     link = f'https://www.foodiesfeed.com/?s={arg}'
     await ctx.send(link.replace(" ","+"))
     
+#Text recipe
 @bot.command(name = "recipe")
 async def recipe(ctx,*,arg):
     link = f'https://www.allrecipes.com/search/results/?wt={arg}&sort=re'
     #print(link)
     await ctx.send(link.replace(" ",""))
 
+#Youtube Recipe
 @bot.command(name = "ytrecipe")
 async def ytrecipe(ctx, * , arg):
     link = f'https://www.youtube.com/results?search_query={arg}+recipe'
     await ctx.send(link.replace(" ","+"))
-    
+
+#Nutrition info
+@bot.command(name = "nutrition")
+async def nutrition(ctx, * , arg):
+    link = f'https://www.nutritionix.com/search?q={arg}'
+    await ctx.send(link.replace(" ","+"))
+
 #client.run(TOKEN)
 bot.run(TOKEN)
 
