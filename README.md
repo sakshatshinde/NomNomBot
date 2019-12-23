@@ -7,6 +7,8 @@ A discord bot dedicated to yummy food
 - Make sure you have [python 3.6](https://www.python.org/downloads/) or above installed
 - Clone the github repository
 - Extract the zip
+- Make a .env file in the project root directory 
+- Save your API key in that file
 - Open a terminal in the project directory & run the following command
 
 ```bash
