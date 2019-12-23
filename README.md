@@ -8,6 +8,7 @@ A discord bot dedicated to yummy food
 - Clone the github repository
 - Extract the zip
 - Make a .env file in the project root directory 
+- Grab an [API key / token](https://discordapp.com/developers/applications)
 - Save your API key in that file
 - Open a terminal in the project directory & run the following command
 
