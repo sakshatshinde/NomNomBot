@@ -1,5 +1,5 @@
 discord.py==1.2.5
-future==0.18.2
+future==latest
 python-dotenv==0.10.3
 
 
